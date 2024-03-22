@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  html{
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+  }
+  #title-block{
+    margin: 20vh 0 50px 0;
+  }
+  #title{
+    font-size: 4.8em;
+  }
+  #subtitle{
+    font-size: 1.4em;
+  }
+  #input-field{
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px;
+  }
+  #input-field *{
+    margin: 5px auto;
+  }
+  
+  #text-input{
+    font-size: 2.8em;
+    border-radius: 50px;
+    padding: 8px;
+    margin-top: 5%;
+  }
+  #check-btn{
+    font-size: 2.8em;
+    border-radius: 50px;
+    max-width: 40%;
+    min-width: 40%;
+    margin-top: 5%;
+  }
+  #result-title{
+    font-size: 1.4em;
+    margin-top: 5%;
+  }
+  #result{
+    font-size: 2.2em;
+    margin: 5% 0 5% 0;
+  }
