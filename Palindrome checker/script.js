@@ -35,12 +35,18 @@ function checkPalindrome(cleanInput){
   console.log("This is your input reversed: " + cleanInputReversed)
   if (cleanInput === cleanInputReversed){
     console.log("This is a Palindrome!")
-    resultText.innerText = inputValue + ' is a palindrome';
+    resultText.innerText = '"' + inputValue + '"' + ' is a palindrome';
   } else {
     console.log("This is not a Palindrome :(")
-    resultText.innerText = inputValue + ' is not a palindrome';
+    resultText.innerText = '"' + inputValue + '"' + ' is not a palindrome';
   }
 }
 
 
 checkButton.addEventListener('click', clickCheckButton);
+document.addEventListener('keypress', function(e) {
+    console.log(e.key);
+    if (e.key === 'Enter') {
+        clickCheckButton();
+    }
+});
