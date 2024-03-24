@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Quattrocento", serif;
+  text-align: center;
+  color: #8A9CAE;
+}
+body{
+  background-color: #1D2E40;
+}
+
+#title{
+  font-size: 3.4em;
+  margin-top: 10vh;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+#subtitle{
+  font-size: 1.8em;
+  margin: 10px 0 30px 0;
+  text-shadow: 0.5px 0.5px 0.5px #ffffff;
+}
+#converter{
+  position: absolute;
+  top: 30%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  white-space: nowrap; 
+}
+#converter-field{
+  border: 3px solid #8A9CAE;
+  background-color: #294059;
+  box-shadow: 2px 2px 1px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 250px;
+  min-height: 250px;
+  
+}
+#number{
+  font-size: 2.0em;
+  margin: 30px 40px 15px 40px;
+  height: 42.5px;
+  text-shadow: 1px 1px 1px #ffffff;
+  border: 3px solid #8A9CAE;
+  background-color: #1D2E40;
+  box-shadow: 1.5px 1.5px 1.5px #ffffff;
+}
+#convert-btn{
+  font-size: 2.0em;
+  margin: 15px 40px;
+  height: 42.5px;
+  border-radius: 0px;
+  text-shadow: 1px 1px 1px #ffffff;
+  border: 3px solid #8A9CAE;
+  background-color: #8A5D15;
+  color: #ffffff;
+  box-shadow: 1.5px 1.5px 1.5px #ffffff;
+}
+#convert-btn:hover{
+  border: 3px solid #8A5D15;
+  color: #8A5D15;
+  background-color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1.5px #ffffff;
+}
+.output{
+  font-size: 55px;
+  line-height: 35px;
+  height: 42.5px;
+  text-shadow: 1px 1px 1px #ffffff;
+  margin-top: 25px;
+}
+
+/* Make output smaller for tekst */
+.output.small{
+  font-size: 32px;
+  white-space: wrap;
+  height: auto;
+  margin: 0;
+  justify-items: center;
+}
+
+/* Remove number input arrows */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+/* Smaller for mobile */
+@media only screen and (max-width: 450px) {
+  #converter{
+    white-space: wrap;
+  }
+  #converter-field{
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 250px;
+  min-height: 250px;
+  }
+  #output{
+    font-size: 42px;
+  }
+}
+@media only screen and (max-height: 650px) {
+  #converter{
+    top: 40%;
+  }
+}
