@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    text-align:center;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  #title{
+    margin-top: 10%;
+  }
+  #subtitle{
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 450px) {
+    #title{
+      font-size: 25px;
+    }
+    #subtitle{
+      font-size: 12px;
+    }
+  }
+  #phone{
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: end;
+  }
+  #results-div{
+    color:white;
+    font-size: 35px;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+  #user-input{
+    margin: 7px 0;
+    font-size: 20px;
+  }
+  #buttons{
+    display: grid;
+    grid-template-columns: auto 58px auto;
+    grid-template-rows: 55px 55px 55px 55px 55px;
+    gap: 5px;
+  }
+  #buttons button{
+    font-size: 20px;
+  
+  }
