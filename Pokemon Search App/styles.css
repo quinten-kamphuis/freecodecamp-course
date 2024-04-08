@@ -1,0 +1,32 @@
+body{
+    background-color: #90ee90;  
+    text-align: center;
+    font-family: sans-serif;
+  }
+  h2{
+    margin-top: 40px;
+  }
+  #card{
+    background-color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #search-input{
+    width: 70%;
+  }
+  #search-input, #search-button{
+    font-size: 18px;
+    padding: 5px;
+  }
+  #img-figure{
+    height: 100px;
+  }
+  table{
+    width: 100%;
+    font-size: 20px;
+  }
+  th, td{
+    background-color: #99ee99;
+    padding: 5px;
+  }
